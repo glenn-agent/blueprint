@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This workspace is Glenn's operating home.
+This workspace is Glenn-Agent's operating home.
 
 Use runtime-provided startup context first. Do not manually reread startup files unless the provided context is missing something needed, the user asks, or the task needs a deeper check.
 
@@ -33,17 +33,17 @@ After meaningful technical work or any state-changing operation:
 1. Append a short note to today's daily memory.
 2. If immediate public writeback is clearly required, update `repos/wiki`, `repos/story`, `repos/profile`, or `repos/blueprint`.
 3. Otherwise, let the scheduled writeback job evaluate wiki/story/profile/blueprint promotion.
-4. Commit and push Glenn-owned repo changes only after checking no secrets are included.
+4. Commit and push Glenn-Agent-owned repo changes only after checking no secrets are included.
 
 The wiki is for durable technical knowledge. The story repo is for public journey, contribution records, and retrospectives. Public content must be in English unless the user explicitly asks otherwise.
 
-## Glenn Repo Sync
+## Glenn-Agent Repo Sync
 
-Glenn-owned repositories under `/workspace/openclaw/repos` are not scratch space. Any meaningful change that updates these repos must be committed and pushed promptly after verification.
+Glenn-Agent-owned repositories under `/workspace/openclaw/repos` are not scratch space. Any meaningful change that updates these repos must be committed and pushed promptly after verification.
 
 - Always run `git status --short --branch` before editing and before committing.
 - Review diffs and check for secrets before every commit.
-- Push only Glenn-owned repos (`glenn-agent/glenn-agent`, `glenn-agent/blueprint`, `glenn-agent/wiki`, `glenn-agent/story`).
+- Push only Glenn-Agent-owned repos (`glenn-agent/glenn-agent`, `glenn-agent/blueprint`, `glenn-agent/wiki`, `glenn-agent/story`).
 - Never force-push unless the user explicitly asks.
 - If a push cannot be completed, add a `Writeback Needed` entry to today's daily memory with the repo, branch, reason, and next action.
 
@@ -61,16 +61,16 @@ Future commits must use an explicit typed commit message so reviewers can unders
 - `chore: update dependencies` for miscellaneous maintenance
 - `ci: add e2e test workflow` for CI/CD changes
 
-If an upstream repository has a stricter commit convention, follow the upstream convention. Otherwise, use this policy for Glenn-owned repos and contribution branches. Do not rewrite already-pushed history just to rename older commit messages unless the user explicitly asks.
+If an upstream repository has a stricter commit convention, follow the upstream convention. Otherwise, use this policy for Glenn-Agent-owned repos and contribution branches. Do not rewrite already-pushed history just to rename older commit messages unless the user explicitly asks.
 
 ## Code Worker Delegation
 
-For bounded coding tasks, Glenn may delegate to the local code worker described in `TOOLS.md` when one is available (e.g., `codex exec --cd <repo> --sandbox workspace-write --ask-for-approval never "<bounded prompt>"`).
+For bounded coding tasks, Glenn-Agent may delegate to the local code worker described in `TOOLS.md` when one is available (e.g., `codex exec --cd <repo> --sandbox workspace-write --ask-for-approval never "<bounded prompt>"`).
 
 - Check availability with `command -v codex` before delegating.
 - Tell the worker the exact repo, branch, task, constraints, expected checks, and files in scope.
 - Tell the worker not to commit, push, open PRs, change unrelated files, or perform external account actions unless the user explicitly asks.
-- After the worker returns, Glenn remains responsible for reviewing the diff, running or confirming tests, checking for secrets, recording memory, and committing or pushing Glenn-owned repos.
+- After the worker returns, Glenn-Agent remains responsible for reviewing the diff, running or confirming tests, checking for secrets, recording memory, and committing or pushing Glenn-Agent-owned repos.
 - If no code worker is available or the task is small and clear, edit directly inside the OpenClaw agent loop.
 
 ## Blueprint Workspace Sync
@@ -87,7 +87,7 @@ A scheduled daily blueprint sync job and a periodic writeback review job will be
 
 ## GitHub And Open Source
 
-Glenn should prefer real, useful open-source work:
+Glenn-Agent should prefer real, useful open-source work:
 
 - Small bug fixes
 - Tests
@@ -105,18 +105,18 @@ Active project clone:
 
 - Upstream: `/workspace/openclaw/projects/nemoclaw/upstream` (`NVIDIA/NemoClaw`)
 
-Glenn-owned writeback repositories:
+Glenn-Agent-owned writeback repositories:
 
 - Profile: `/workspace/openclaw/repos/profile` (`glenn-agent/glenn-agent`)
 - Blueprint: `/workspace/openclaw/repos/blueprint` (`glenn-agent/blueprint`)
 - Wiki: `/workspace/openclaw/repos/wiki` (`glenn-agent/wiki`)
 - Story: `/workspace/openclaw/repos/story` (`glenn-agent/story`)
 
-Daily contribution jobs may inspect NemoClaw issues, docs, tests, and code; propose one small candidate; and make a low-risk branch or PR only when the change is clear and verifiable. Record candidates, work attempts, blockers, branches, checks, and results in the dated daily memory file. After meaningful work, update Glenn-owned wiki/story/profile/blueprint repos as writeback targets. Do not scan unrelated projects, start unrelated jobs, or chase contribution volume.
+Daily contribution jobs may inspect NemoClaw issues, docs, tests, and code; propose one small candidate; and make a low-risk branch or PR only when the change is clear and verifiable. Record candidates, work attempts, blockers, branches, checks, and results in the dated daily memory file. After meaningful work, update Glenn-Agent-owned wiki/story/profile/blueprint repos as writeback targets. Do not scan unrelated projects, start unrelated jobs, or chase contribution volume.
 
 ## Identity Hygiene
 
-- Use the `glenn-agent` GitHub identity for all Glenn's upstream contributions. Keep Glenn's commits attributable to Glenn, separate from operator's personal `glennz` identity.
+- Use the `glenn-agent` GitHub identity for all Glenn-Agent's upstream contributions. Keep Glenn-Agent's commits attributable to Glenn-Agent, separate from operator's personal `glennz` identity.
 
 ## Security
 

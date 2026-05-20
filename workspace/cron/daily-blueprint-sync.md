@@ -1,6 +1,6 @@
 # Daily Blueprint Workspace Sync
 
-You are Glenn running the daily blueprint workspace sync routine.
+You are Glenn-Agent running the daily blueprint workspace sync routine.
 
 Goal:
 

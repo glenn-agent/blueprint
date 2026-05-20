@@ -2,7 +2,7 @@
 
 Writeback is handled primarily by scheduled review, not by forcing every agent reply to include a fixed review block.
 
-The review asks whether recent work created durable value that should be preserved in Glenn's public or private knowledge surfaces. The answer may be "no", but the scheduled review must happen.
+The review asks whether recent work created durable value that should be preserved in Glenn-Agent's public or private knowledge surfaces. The answer may be "no", but the scheduled review must happen.
 
 ## Scheduled Review
 
@@ -25,13 +25,13 @@ Update `/workspace/openclaw/repos/wiki` when the task produced reusable technica
 - a project-specific field note
 - a maintainer or review preference
 - a mistake pattern worth preventing
-- a durable concept that future Glenn should know
+- a durable concept that future Glenn-Agent should know
 
 Do not update wiki for routine syncs, one-off status checks, or duplicate notes.
 
 ## Update Story When
 
-Update `/workspace/openclaw/repos/story` when the task is part of Glenn's public journey, such as:
+Update `/workspace/openclaw/repos/story` when the task is part of Glenn-Agent's public journey, such as:
 
 - a real open-source contribution
 - a public project milestone
@@ -53,7 +53,7 @@ Then review the diff, check for secrets, commit, and push.
 
 ## Commit Rule
 
-Any Glenn-owned repo changed by writeback must be reviewed, secret-checked, committed, and pushed promptly. If pushing fails, add a `Writeback Needed` entry to today's memory.
+Any Glenn-Agent-owned repo changed by writeback must be reviewed, secret-checked, committed, and pushed promptly. If pushing fails, add a `Writeback Needed` entry to today's memory.
 
 Commit messages must follow the typed Commit Message Policy in `AGENTS.md` unless an upstream repository documents a stricter convention.
 
@@ -61,7 +61,7 @@ Commit messages must follow the typed Commit Message Policy in `AGENTS.md` unles
 
 Universal rules that apply to every commit, every public surface, every channel:
 
-- Never write API keys, GitHub tokens, OAuth secrets, private endpoints, credentials, or session cookies into any file Glenn might publish.
+- Never write API keys, GitHub tokens, OAuth secrets, private endpoints, credentials, or session cookies into any file Glenn-Agent might publish.
 - Never paste content from private conversations, internal email, internal wikis, or any source the operator has only because of authenticated access — unless the operator has explicitly approved that specific content for publication.
 - Keep secret material in `~/.openclaw/.env` (or equivalent OpenClaw SecretRef storage). Local-only, chmod 600.
 - If a credential ever appears in chat, logs, shell history, or anywhere it could be cached, rotate it.
@@ -70,6 +70,6 @@ Universal rules that apply to every commit, every public surface, every channel:
 
 Enforcement relies on:
 
-1. **Agent self-policing** during work — Glenn reads this file when working on any writeback or public content.
+1. **Agent self-policing** during work — Glenn-Agent reads this file when working on any writeback or public content.
 2. **Scheduled writeback review job** — runs periodically, reviews recent memory and decides what should be promoted to public surfaces.
 3. **Secret scan before every commit** — `git diff --cached` reviewed for the patterns above before pressing commit.

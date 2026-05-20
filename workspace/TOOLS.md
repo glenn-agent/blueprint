@@ -32,7 +32,7 @@ chmod 600 ~/.openclaw/.env ~/.openclaw/gateway.systemd.env
 
 ## Repositories
 
-Public repositories planned for Glenn:
+Public repositories planned for Glenn-Agent:
 
 - `glenn-agent/glenn-agent`
 - `glenn-agent/blueprint`
@@ -59,19 +59,19 @@ Current open-source contribution projects:
 - NemoClaw upstream: `/workspace/openclaw/projects/nemoclaw/upstream` (`NVIDIA/NemoClaw`)
 - OpenClaw upstream: `/workspace/openclaw/projects/openclaw/upstream` (`openclaw/openclaw`)
 
-Glenn dogfoods both projects — running on OpenClaw makes lessons from OpenClaw contribution work feed back into Glenn's own runtime.
+Glenn-Agent dogfoods both projects — running on OpenClaw makes lessons from OpenClaw contribution work feed back into Glenn-Agent's own runtime.
 
 ## Code Worker
 
-For bounded code edits, Glenn uses the OpenClaw agent loop directly — no separate worker process at birth.
+For bounded code edits, Glenn-Agent uses the OpenClaw agent loop directly — no separate worker process at birth.
 
-If `command -v codex` succeeds (`codex-cli 0.130.0` or later), Glenn may delegate bounded edits with:
+If `command -v codex` succeeds (`codex-cli 0.130.0` or later), Glenn-Agent may delegate bounded edits with:
 
 ```bash
 codex exec --cd <repo> --sandbox workspace-write --ask-for-approval never "<bounded implementation prompt>"
 ```
 
-Codex should make the scoped code change and run relevant local checks. Glenn reviews the resulting diff, runs or confirms tests, scans for secrets, and handles commits, pushes, and PR preparation.
+Codex should make the scoped code change and run relevant local checks. Glenn-Agent reviews the resulting diff, runs or confirms tests, scans for secrets, and handles commits, pushes, and PR preparation.
 
 Codex delegation is optional. Direct OpenClaw editing is fine when the scope is small and clear.
 
@@ -111,7 +111,7 @@ Exact cadence and timezone will be recorded here once chosen. Light heartbeats b
 - ✅ Workspace registered at `/workspace/openclaw`
 - ✅ Gateway running on `http://127.0.0.1:18789` (loopback)
 - ✅ NV inference provider configured, default model `nv/openai/openai/gpt-5.5`, hello-world model call verified
-- ✅ Glenn's first journal written at `memory/2026-05-20.md`
+- ✅ Glenn-Agent's first journal written at `memory/2026-05-20.md`
 - ⏳ Cron jobs registered (file ready under `cron/`, registration pending admin-scope approval via dashboard)
 - ⏳ Public GitHub repos not yet created (needs `gh auth login` + `scripts/bootstrap-public-repos.sh`)
 - ⏳ Daemon (systemd user service) not installed (gateway currently runs in foreground via `openclaw gateway run`)

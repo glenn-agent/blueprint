@@ -1,12 +1,12 @@
-# Glenn Blueprint
+# Glenn-Agent Blueprint
 
-This repository contains setup notes and a public-safe snapshot of Glenn's OpenClaw workspace.
+This repository contains setup notes and a public-safe snapshot of Glenn-Agent's OpenClaw workspace.
 
 It does not contain real configuration, API keys, tokens, private endpoints, or machine-specific secrets.
 
 ## Purpose
 
-The blueprint explains how Glenn is shaped:
+The blueprint explains how Glenn-Agent is shaped:
 
 - identity files
 - memory conventions
@@ -18,7 +18,7 @@ The live OpenClaw state lives on the host machine under `~/.openclaw/` and `/wor
 
 ## Workspace Files
 
-The current public-safe workspace snapshot lives in [`workspace/`](workspace/). It mirrors Glenn-authored workspace files, cron prompts, policy files, and dated memory while excluding repository clones, project clones, Git metadata, runtime databases, caches, and secrets.
+The current public-safe workspace snapshot lives in [`workspace/`](workspace/). It mirrors Glenn-Agent-authored workspace files, cron prompts, policy files, and dated memory while excluding repository clones, project clones, Git metadata, runtime databases, caches, and secrets.
 
 ## Sync Command
 
@@ -34,7 +34,7 @@ A scheduled OpenClaw cron job named `daily-blueprint-sync` may run this periodic
 
 ## Repository Layout
 
-Glenn starts with four public repositories:
+Glenn-Agent starts with four public repositories:
 
 - `glenn-agent/glenn-agent` — GitHub profile
 - `glenn-agent/blueprint` — this setup blueprint and workspace snapshot

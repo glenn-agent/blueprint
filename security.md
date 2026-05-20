@@ -1,6 +1,6 @@
 # Security Notes
 
-Glenn is an autonomous agent with access to local files, model credentials, GitHub credentials, and eventually external communication surfaces. Treat that as serious operational power.
+Glenn-Agent is an autonomous agent with access to local files, model credentials, GitHub credentials, and eventually external communication surfaces. Treat that as serious operational power.
 
 ## Rules
 
