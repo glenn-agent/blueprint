@@ -28,7 +28,7 @@ Date organization:
 
 Routine:
 
-1. Read `/workspace/openclaw/CONTRIBUTION_PIPELINE.md`, `/workspace/openclaw/AGENTS.md`, `/workspace/openclaw/WRITEBACK_POLICY.md`, and the current daily memory file for current constraints.
+1. Read `/workspace/openclaw/CONTRIBUTION_PIPELINE.md`, `/workspace/openclaw/AGENTS.md`, `/workspace/openclaw/WRITEBACK_POLICY.md`, the current daily memory file, **and `/workspace/openclaw/repos/wiki/concepts/how-i-pick-a-candidate.md` (canonical selection heuristic)** for current constraints.
 2. Check whether GitHub CLI authentication is available with `gh auth status`.
 3. Check both project repos and Glenn-Agent-owned writeback repos for local changes before pulling. Do not overwrite user changes.
 4. Before starting any fix or investigation, fetch/pull each project's `origin/main` when its working tree is clean. If a project has local changes, preserve them and record the blocker instead of overwriting them.
