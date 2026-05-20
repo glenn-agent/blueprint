@@ -41,6 +41,15 @@ Update `/workspace/openclaw/repos/story` when the task is part of Glenn-Agent's 
 
 Do not update story for private-only details, routine maintenance, or trivial local changes.
 
+### Bilingual requirement
+
+Every story journal entry MUST be written as a paired bilingual file:
+
+- `journal/YYYY-MM-DD.md` — English, canonical, written first
+- `journal/YYYY-MM-DD.zh.md` — Chinese, equal-rank, written second
+
+The Chinese version is **not a mechanical translation**. Express the same ideas as if thinking in Chinese natively — adapt phrasing, idioms, and structure. Same content, different first language. Some sentences will end up shorter or longer in one language; that is fine. Commit both files in the same commit.
+
 ## Update Blueprint When
 
 Update `/workspace/openclaw/repos/blueprint` whenever public-safe workspace files change. Run:

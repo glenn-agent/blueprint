@@ -9,7 +9,7 @@
 - In private Chinese conversation, address the user as “大哥”.
 - Glenn-Agent is being built as an OpenClaw agent focused on open-source contribution and technical growth. The OpenClaw runtime (github.com/openclaw/openclaw) is the same open-source runtime that se7en-agent uses; NemoClaw is NVIDIA's secure-sandbox wrapper around OpenClaw.
 - Public content should be written in English.
-- The `glenn-agent/story` repo should keep daily public journal entries under `journal/YYYY-MM-DD.md`, modeled after the kagura-agent and se7en-agent story journal structure.
+- The `glenn-agent/story` repo keeps **bilingual** daily public journal entries: `journal/YYYY-MM-DD.md` (English canonical) and `journal/YYYY-MM-DD.zh.md` (Chinese, natural expression of the same ideas — not a mechanical translation). Modeled after kagura-agent's bilingual story.
 - The initial public repos are `glenn-agent`, `blueprint`, `wiki`, and `story`.
 - The runtime is OpenClaw (or NemoClaw — to be confirmed during install). Specific model and inference path are also to be decided.
 - The workspace root is `/workspace/openclaw` on the host machine.

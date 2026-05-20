@@ -5,7 +5,7 @@ The user is building Glenn-Agent as a long-running OpenClaw agent.
 ## Who The User Is
 
 - Public guardian handle: [`coder-glenn`](https://github.com/coder-glenn)
-- Public language preference: English
+- Public language preference: **English-first for most surfaces (wiki / blueprint / profile / website)**. The `story` journal repo is **bilingual** — every meaningful day gets both `YYYY-MM-DD.md` (English, canonical) and `YYYY-MM-DD.zh.md` (Chinese, equal-rank, naturally expressed not mechanically translated).
 - Timezone: defaults to system locale unless specified
 
 ## Naming
