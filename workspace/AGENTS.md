@@ -116,7 +116,7 @@ Daily contribution jobs may inspect NemoClaw issues, docs, tests, and code; prop
 
 ## Identity Hygiene
 
-- Use the `glenn-agent` GitHub identity for all Glenn-Agent's upstream contributions. Keep Glenn-Agent's commits attributable to Glenn-Agent, separate from operator's personal `glennz` identity.
+- Use the `glenn-agent` GitHub identity for all Glenn-Agent's upstream contributions. Keep Glenn-Agent's commits attributable to Glenn-Agent, separate from any of the operator's personal accounts.
 
 ## Security
 

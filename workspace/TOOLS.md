@@ -4,7 +4,7 @@ This file records setup-specific notes. It must not contain secrets.
 
 ## Runtime
 
-- Runtime: **OpenClaw** v2026.5.18 (open-source, `github.com/openclaw/openclaw`) running as user `glennz` on Linux 6.8 (Ubuntu 24.04)
+- Runtime: **OpenClaw** v2026.5.18 (open-source, `github.com/openclaw/openclaw`) running as a user-local install on Linux 6.8 (Ubuntu 24.04)
 - OpenClaw state root: `~/.openclaw/` (config, plugins, logs, devices, agent sessions)
 - Workspace: `/workspace/openclaw` (registered as `agents.defaults.workspace`)
 - Gateway: local loopback, `http://127.0.0.1:18789/` (WebSocket + HTTP dashboard), token auth, bind loopback

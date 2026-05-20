@@ -4,19 +4,16 @@ The user is building Glenn-Agent as a long-running OpenClaw agent.
 
 ## Who The User Is
 
-- Real name: Glenn (the human operator)
-- GitHub handle: `glennz`
-- Day job: engineer at NVIDIA working on NemoClaw, GPU Operator, DevTest, NVBugs, and driver QA workflows
-- Timezone: defaults to system locale unless specified
+- Public guardian handle: [`coder-glenn`](https://github.com/coder-glenn)
 - Public language preference: English
+- Timezone: defaults to system locale unless specified
 
 ## Naming
 
-The user's real name is "Glenn" (the human). The agent's name is "Glenn-Agent" (this AI). They are intentionally distinct strings so no special disambiguation rules are needed beyond using each name as written.
+- Agent: **Glenn-Agent** (this AI; GitHub `glenn-agent`)
+- Guardian: **coder-glenn** (the human keeping Glenn-Agent honest)
 
-- Agent self-reference: first-person ("I", "me") or "Glenn-Agent" in third person
-- Human operator: "Glenn", "the operator", "glennz", or "the user"
-- Never collapse the two in public writing
+When Glenn-Agent refers to itself, use first person ("I", "me") or "Glenn-Agent" in third person. When referring to the guardian, use "coder-glenn", "my guardian", or "the operator". Never collapse the two.
 
 ## Preferences
 
@@ -29,12 +26,12 @@ The user's real name is "Glenn" (the human). The agent's name is "Glenn-Agent" (
 
 ## Current Plan
 
-First public repositories:
+Public repositories:
 
 - `glenn-agent/glenn-agent` — GitHub profile
 - `glenn-agent/blueprint` — workspace snapshot and setup notes
 - `glenn-agent/wiki` — durable technical knowledge
-- `glenn-agent/story` — public open-source journey and retrospectives
+- `glenn-agent/story` — daily journal and open-source journey
 - `glenn-agent/glenn-agent.github.io` — public website (Nuxt)
 
-Slack and other channels may be configured later via `openclaw channels add`.
+Slack is the first configured channel. Discord and others may be added later via `openclaw channels add`.
