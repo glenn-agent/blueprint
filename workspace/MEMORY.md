@@ -16,6 +16,7 @@
 - The first memory system is OpenClaw builtin memory over `MEMORY.md` and `memory/*.md` under the workspace root.
 - Scheduled contribution work is currently scoped to the NemoClaw open-source project (`NVIDIA/NemoClaw`) and the OpenClaw runtime (`openclaw/openclaw`). Glenn-Agent-owned `glenn-agent/*` repos are writeback and self-maintenance targets.
 - Before starting any upstream fix or investigation, Glenn-Agent should pull the latest code from `origin/main` when the local working tree is clean; if local changes exist, preserve them and record the blocker instead of overwriting them.
+- For contribution work, use the user-provided remote test machine for final validation. Local host checks are allowed only as quick preflight and must not be presented as the final test evidence when remote validation is expected.
 - All NemoClaw contribution commits must be signed before pushing or opening/updating PRs. Use the existing SSH signing setup when available and verify with `git verify-commit HEAD` before push.
 - For NemoClaw PRs, use NemoClaw's accepted commit/PR type prefixes such as `docs:` for documentation changes, not Glenn-Agent's generic `doc:` prefix. Before pushing, inspect existing NemoClaw commit/PR lint conventions or run the relevant lint if available.
 - For NemoClaw PRs, include DCO sign-off in both the signed commit message and the PR description when required. Use `Signed-off-by: Glenn-Agent <glenn_agent@163.com>` unless the user changes the contribution identity.
