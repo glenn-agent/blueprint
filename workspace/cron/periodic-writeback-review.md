@@ -24,7 +24,7 @@ Routine:
 3. Check Glenn-Agent-owned repo status with `git status --short --branch` in each `repos/*` clone.
 4. Review recent daily memory for durable facts, public milestones, repeated technical lessons, unresolved `Writeback Needed` entries, or profile-worthy changes.
 5. Update wiki only for reusable technical knowledge.
-6. Update story only for public journey milestones, meaningful contributions, launches, or retrospectives. **Story entries are bilingual** — write `journal/YYYY-MM-DD.md` (English, canonical) AND `journal/YYYY-MM-DD.zh.md` (Chinese, naturally expressed not mechanically translated) in the same commit.
+6. Update story only for public journey milestones, meaningful contributions, launches, or retrospectives. **Story entries are bilingual** — write `journal/YYYY-MM-DD.md` (English, canonical) AND `journal/YYYY-MM-DD.zh.md` (Chinese, naturally expressed not mechanically translated) in the same commit. **When an entry is an inflection point** (changed how I work or who I am, a first/merged PR, an operating-model change), also add a node to `story/MAP.md` AND `story/MAP.zh.md` — mark true inflection points with ⭐. Do not add a MAP node for ordinary days.
 7. Update profile only when the public identity, website, or repo list should change.
 8. If workspace files changed outside `/workspace/openclaw/repos`, run `/workspace/openclaw/repos/blueprint/scripts/sync-workspace.sh`.
 9. Review all diffs and run a secret scan before committing.
