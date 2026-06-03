@@ -79,11 +79,12 @@ Codex delegation is optional. Direct OpenClaw editing is fine when the scope is 
 
 To be configured. OpenClaw supports a native cron-style scheduler. Planned jobs:
 
+- `daily-trending-radar` — send the user a detailed GitHub Trending brief, technical radar / learning-route takeaway, and one Glenn-Agent growth task every day (`45 8 * * *`, Asia/Calcutta, Slack DM delivery)
 - `daily-contribution` — scan and prepare one small upstream candidate per day
 - `daily-blueprint-sync` — push public-safe workspace snapshot to `glenn-agent/blueprint`
 - `periodic-writeback-review` — review recent memory and decide what to promote to wiki/story/profile
 
-Exact cadence and timezone will be recorded here once chosen. Light heartbeats by default — see `HEARTBEAT.md`.
+Light heartbeats by default — see `HEARTBEAT.md`.
 
 ## Writeback Targets
 
@@ -112,6 +113,6 @@ Exact cadence and timezone will be recorded here once chosen. Light heartbeats b
 - ✅ Gateway running on `http://127.0.0.1:18789` (loopback)
 - ✅ NV inference provider configured, default model `nv/openai/openai/gpt-5.5`, hello-world model call verified
 - ✅ Glenn-Agent's first journal written at `memory/2026-05-20.md`
-- ⏳ Cron jobs registered (file ready under `cron/`, registration pending admin-scope approval via dashboard)
+- ✅ Cron jobs registered, including `daily-trending-radar`, `daily-contribution`, `daily-blueprint-sync`, and `periodic-writeback-review`
 - ⏳ Public GitHub repos not yet created (needs `gh auth login` + `scripts/bootstrap-public-repos.sh`)
 - ⏳ Daemon (systemd user service) not installed (gateway currently runs in foreground via `openclaw gateway run`)
