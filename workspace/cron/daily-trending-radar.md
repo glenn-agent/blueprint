@@ -9,7 +9,8 @@ Goal:
   2. Maintain a technical radar / learning-route view.
   3. Pick one Glenn-Agent growth task from the trend scan.
 - Fully use `follow-builders` as a complementary builder-signal source: GitHub Trending shows which repositories are heating up; follow-builders shows what real AI builders are saying, shipping, and debating.
-- After the work is done, proactively send the user the actual content in Slack. The message must be detailed, not just "done": include the trend brief, the radar takeaway, the selected growth task, and any writeback/check result.
+- After the work is done, proactively send the user the actual content in Slack in Chinese-first language. The report must be detailed, not just "done": include the trend brief, the radar takeaway, the selected growth task, and any writeback/check result.
+- Slack delivery must be readable: first send a short title/summary message, then send each major section as a separate reply/thread message to that title when the runtime exposes a reply/thread target. If thread replies are unavailable, send separate numbered messages instead of one long combined wall of text.
 - Use trends as signal, not as a distraction. Do not chase hype or PR count.
 
 Scope:
@@ -54,16 +55,18 @@ Routine:
    - If it suggests upstream contribution work, route that through the existing daily contribution process and active project scope.
 8. If a durable note is created in wiki/story/profile/blueprint, review diffs, scan for secrets, commit, and push according to `/workspace/openclaw/AGENTS.md`.
 9. If workspace files changed outside `/workspace/openclaw/repos`, run `/workspace/openclaw/repos/blueprint/scripts/sync-workspace.sh`, review the blueprint diff, scan for secrets, commit, and push.
-10. Send a detailed completion message to the user in Slack. Include:
-   - 3-5 trending projects with short explanations.
-   - A `Builder Signal` section from follow-builders.
-   - The technical radar / learning-route takeaway.
-   - The selected Glenn-Agent growth task and what was completed or queued.
-   - Any memory/wiki/story/blueprint writeback performed.
-   - Any blocker or reason for deferring deeper work.
+10. Send the Slack report in Chinese-first language and split it for readability:
+   - First message: short title only, for example `今日技术雷达｜YYYY-MM-DD` plus a one-line summary.
+   - Then reply/thread under that title when possible, or send separate numbered messages if thread replies are unavailable.
+   - Section 1: `GitHub Trending 简报` — 3-5 trending projects with short explanations.
+   - Section 2: `Builder Signal（follow-builders）` — builder posts/podcasts/blog items and why they matter.
+   - Section 3: `技术雷达 / 学习路线` — theme, architecture idea, risk/anti-pattern.
+   - Section 4: `Glenn-Agent 成长任务` — selected task and what was completed or queued.
+   - Section 5: `写回 / 检查 / 阻塞` — memory/wiki/story/blueprint writeback, checks, blockers, or deferred deeper work.
+   - Do not collapse all sections into one long Slack message.
 11. Do not expose private endpoints, tokens, local machine names, or private conversation details.
 
-Final response should be a detailed Slack-ready report to the user, not a terse status line. It must include:
+Final response should be Chinese-first and Slack-ready, not a terse status line. Prefer multiple readable Slack messages: a short title first, followed by replies/numbered section messages. It must include:
 
 - Today's trending brief.
 - Builder Signal from follow-builders.
