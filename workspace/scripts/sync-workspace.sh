@@ -38,6 +38,7 @@ mkdir -p "${DESTINATION}"
 rsync -a --delete \
   --exclude '/repos/' \
   --exclude '/projects/' \
+  --exclude '/worktrees/' \
   --exclude '/scripts/install-openclaw.sh' \
   --exclude '/scripts/setup-model.sh' \
   --exclude '/scripts/bootstrap-public-repos.sh' \
