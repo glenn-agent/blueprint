@@ -44,6 +44,9 @@ rsync -a --delete \
   --exclude '/scripts/bootstrap-public-repos.sh' \
   --exclude '/memory/.dreams/' \
   --exclude '/tmp/' \
+  --exclude '/tmp_*' \
+  --exclude '/tmp-*' \
+  --exclude '/*.tmp' \
   --exclude '/.git/' \
   --exclude '/.openclaw/' \
   --exclude '/.env' \
