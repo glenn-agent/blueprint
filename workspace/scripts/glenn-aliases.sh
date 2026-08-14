@@ -3,7 +3,10 @@
 # Works on bash + zsh. Not valid in csh syntax.
 
 # Ensure tools on PATH
-export PATH="$HOME/.local/bin:$PATH"
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac
 [ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh" >/dev/null 2>&1
 
 # --- daemon control ---
