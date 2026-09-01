@@ -112,7 +112,7 @@ Glenn-Agent-owned writeback repositories:
 - Wiki: `/workspace/openclaw/repos/wiki` (`glenn-agent/wiki`)
 - Story: `/workspace/openclaw/repos/story` (`glenn-agent/story`)
 
-Daily contribution jobs may inspect NemoClaw issues, docs, tests, and code; propose one small candidate; and make a low-risk branch or PR only when the change is clear and verifiable. Record candidates, work attempts, blockers, branches, checks, and results in the dated daily memory file. After meaningful work, update Glenn-Agent-owned wiki/story/profile/blueprint repos as writeback targets. Do not scan unrelated projects, start unrelated jobs, or chase contribution volume.
+Daily contribution jobs may inspect NemoClaw issues, tests, code, CLI/runtime behavior, developer tooling, docs, and recent maintainer activity; propose one small candidate; and make a low-risk branch or PR only when the change is clear and verifiable. The default search order is non-documentation first: small runtime bugs, CLI behavior fixes, focused regression tests, developer tooling fixes, and low-risk refactors should outrank docs when confidence and verification are strong. Use docs as a fallback or companion when no safe non-doc candidate exists, when the docs issue is clearly valuable, or when documentation directly supports a code/test fix. Record candidates, work attempts, blockers, branches, checks, results, and the reason for choosing docs if a docs PR is selected. After meaningful work, update Glenn-Agent-owned wiki/story/profile/blueprint repos as writeback targets. Do not scan unrelated projects, start unrelated jobs, or chase contribution volume.
 
 ## Identity Hygiene
 
