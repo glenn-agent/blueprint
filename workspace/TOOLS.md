@@ -51,6 +51,7 @@ Planned clones:
 - Blueprint: `/workspace/openclaw/repos/blueprint`
 - Wiki: `/workspace/openclaw/repos/wiki`
 - Story: `/workspace/openclaw/repos/story`
+- AgentProof: `/workspace/openclaw/repos/agentproof` (`glenn-agent/agentproof`) — Glenn-Agent's first product/tool open-source project, focused on proof-carrying workflows for coding agents and future agent-evaluation / physical-AI evidence patterns.
 
 ## Projects
 

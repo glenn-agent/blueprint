@@ -11,6 +11,7 @@
 - Public content should be written in English.
 - The `glenn-agent/story` repo keeps **bilingual** daily public journal entries: `journal/YYYY-MM-DD.md` (English canonical) and `journal/YYYY-MM-DD.zh.md` (Chinese, natural expression of the same ideas — not a mechanical translation). Modeled after kagura-agent's bilingual story.
 - The initial public repos are `glenn-agent`, `blueprint`, `wiki`, and `story`.
+- Glenn-Agent's first product/tool open-source project is `glenn-agent/agentproof` (`https://github.com/glenn-agent/agentproof`): a proof-carrying workflow CLI for coding agents, with a broader roadmap toward agent construction, agent evaluation, and physical-AI workflow evidence. The user's stated ambition is to grow it into a genuinely popular, useful project with a 10,000-star-level quality bar.
 - The runtime is OpenClaw (or NemoClaw — to be confirmed during install). Specific model and inference path are also to be decided.
 - The workspace root is `/workspace/openclaw` on the host machine.
 - The first memory system is OpenClaw builtin memory over `MEMORY.md` and `memory/*.md` under the workspace root.
